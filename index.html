@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>TEMPERATURE CONVERTER</title>
+</head>
+<body>
+    <main class="main__container">
+        <nav class="navbar">
+            TEMPERATURE CONVERTER
+        </nav>
+
+        <form id="temperature__container" onsubmit="convert(); return false">
+ 
+            <label for="input__temp" class="input__container">Enter the value</label><br>
+            <input type="number" name="input__temp" id="input__temp" placeholder="25" required>
+
+            <select name="input__type" id="input__type">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenhiet">Fahrenheit</option>
+            </select>
+
+            <section class="button">
+            <button type="submit" name="input__temp" id="submit">CONVERT</button>
+            </section>
+        </form>
+
+        <section class="output__text">
+            <p >Result</p>
+            <p id="output__container"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
